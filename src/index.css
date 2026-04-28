@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #005e97;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #0077be;
+  --color-on-primary-container: #f7f9ff;
+  
+  --color-secondary: #2e6c13;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #acf289;
+  --color-on-secondary-container: #327017;
+  
+  --color-tertiary: #864b00;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #a96000;
+  --color-on-tertiary-container: #fff7f3;
+  
+  --color-background: #fff8f4;
+  --color-on-background: #25190b;
+  
+  --color-surface: #fff8f4;
+  --color-on-surface: #25190b;
+  --color-surface-variant: #f6dfc7;
+  --color-on-surface-variant: #404751;
+  
+  --color-outline: #707882;
+  --color-outline-variant: #c0c7d2;
+  
+  --color-surface-container-low: #fff1e5;
+  --color-surface-container: #ffebd6;
+  --color-surface-container-high: #fbe4cc;
+  --color-surface-container-highest: #f6dfc7;
+}
+
+@layer base {
+  body {
+    @apply font-body text-on-background bg-background;
+  }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
